@@ -1,0 +1,57 @@
+object Mycode{
+  def main(args : Array[String]):Unit = {
+    
+    println("1. Addition")
+    println("2. Subtraction")
+    println("3. Multiplication")
+    println("4. Division")
+    println("Enter your choice : ")
+    var ch = scala.io.StdIn.readLine().toInt
+    
+    //var ch : Int = scala.io.StdIn.readLine().toInt
+    
+    println("Enter first number")
+    var num1 : Int = scala.io.StdIn.readLine().toInt
+    println("Enter second number")
+    var num2 : Int = scala.io.StdIn.readLine().toInt
+    
+    if(ch == 1)
+    {
+      add(num1, num2)
+    }
+    else if(ch == 2)
+    {
+      sub(num1, num2)
+    }
+    else if(ch == 3)
+    {
+      mul(num1, num2)
+    }
+    else if(ch == 4)
+    {
+      div(num1, num2)
+    }
+    else
+    {
+      println("invalid")
+    }
+    
+    def add(num1: Int, num2:Int) = {
+      println(num1 +  num2)
+    }
+  
+    def sub(num1: Int, num2:Int) = {
+      println(num1 -  num2)
+    }
+    
+    def mul(num1: Int, num2:Int) = {
+      println(num1 *  num2)
+    }
+    
+    def div(num1: Int, num2:Int) = {
+      println(num1 / num2)
+    }
+
+    
+  }
+}
